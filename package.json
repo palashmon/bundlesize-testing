@@ -1,0 +1,29 @@
+{
+	"name": "bundlesize-testing",
+	"version": "1.0.0",
+	"description": "This is just a sample repo for testing bundlesize issues",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha --reporter spec"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/palashmon/bundlesize-testing.git"
+	},
+	"author": "Palash Mondal",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/palashmon/bundlesize-testing/issues"
+	},
+	"homepage": "https://github.com/palashmon/bundlesize-testing#readme",
+	"devDependencies": {
+		"chai": "^4.1.2",
+		"mocha": "^5.2.0"
+	},
+	"bundlesize": [
+		{
+			"path": "./index.js",
+			"maxSize": "20 kB"
+		}
+	]
+}
