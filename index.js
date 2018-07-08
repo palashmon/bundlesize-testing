@@ -1,4 +1,5 @@
 'use strict';
+const isPositiveInt = require('is-positive-int');
 
 /**
  * Adds commas to a number
@@ -7,5 +8,5 @@
  * @return {string}
  */
 module.exports = function(number, locale) {
-  return number.toLocaleString(locale);
+	return isPositiveInt(number) ? number.toLocaleString(locale) : 0;
 };
