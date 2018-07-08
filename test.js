@@ -19,6 +19,6 @@ describe('#numFormatter', function() {
 
 	it('should convert 4 digits', function() {
 		const result = numFormatter(1234);
-		expect(result).to.equal('1,234');
+		expect(result).to.equal('1234');
 	});
 });
