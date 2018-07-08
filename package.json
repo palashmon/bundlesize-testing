@@ -4,7 +4,7 @@
 	"description": "This is just a sample repo for testing bundlesize issues",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha --reporter spec && bundlesize"
+		"test": "bundlesize && mocha --reporter spec"
 	},
 	"repository": {
 		"type": "git",
