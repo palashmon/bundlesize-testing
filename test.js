@@ -21,4 +21,9 @@ describe('#numFormatter', function() {
 		const result = numFormatter(1234);
 		expect(result).to.equal('1,234');
 	});
+
+	it('should convert 5 digits', function() {
+		var result = numFormatter(12345);
+		expect(result).to.equal('12,345');
+	});
 });
