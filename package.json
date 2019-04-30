@@ -18,9 +18,9 @@
 	},
 	"homepage": "https://github.com/palashmon/bundlesize-testing#readme",
 	"devDependencies": {
+		"@condenast/bundlesize": "0.18.1",
 		"chai": "^4.1.2",
-		"mocha": "^5.2.0",
-		"bundlesize": "^0.17.0"
+		"mocha": "^5.2.0"
 	},
 	"bundlesize": [
 		{
