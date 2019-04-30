@@ -1,8 +1,23 @@
 language: node_js
 node_js:
   - '10'
+
+dist: trusty
+sudo: false
+addons:
+  chrome: stable
+
 cache:
   directories:
-    - node_modules
+    - $HOME/.npm
+
+install:
+
+before_script:
+  - npm audit --json >> $TRAVIS_BUILD_DIR/audit/report.json || true
+
+script:
+  - npm run audit:process
+    
 notifications:
   email: false

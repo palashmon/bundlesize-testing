@@ -4,7 +4,8 @@
 	"description": "This is just a sample repo for testing bundlesize issues",
 	"main": "index.js",
 	"scripts": {
-		"test": "bundlesize && mocha --reporter spec"
+		"test": "bundlesize && mocha --reporter spec",
+		"audit:process": "node ./audit/audit-process.js"
 	},
 	"repository": {
 		"type": "git",
@@ -24,10 +25,12 @@
 	"bundlesize": [
 		{
 			"path": "./index.js",
-			"maxSize": "2 kB"
+			"maxSize": "50 kB"
 		}
 	],
 	"dependencies": {
-		"is-positive-int": "1.0.2"
+		"is-positive-int": "1.0.2",
+		"lodash": "4.17.11",
+		"shelljs": "0.8.3"
 	}
 }
