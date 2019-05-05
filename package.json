@@ -18,7 +18,7 @@
 	},
 	"homepage": "https://github.com/palashmon/bundlesize-testing#readme",
 	"devDependencies": {
-		"@palashmon/bundlesize": "~0.18.3",
+		"@palashmon/bundlesize": "~0.18.4",
 		"chai": "^4.1.2",
 		"mocha": "^6.1.4"
 	},
@@ -29,7 +29,7 @@
 		}
 	],
 	"dependencies": {
-		"is-positive-int": "^1.0.2",
+		"is-positive-int": "~1.0.2",
 		"lodash": "^4.17.11",
 		"shelljs": "^0.8.3"
 	}
