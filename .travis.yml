@@ -7,17 +7,17 @@ sudo: false
 addons:
   chrome: stable
 
-cache:
-  directories:
-    - $HOME/.npm
+cache: npm
 
-install:
+jobs:
+  include:
+    - stage: Audit
+      before_script:
+        - npm audit --json >> $TRAVIS_BUILD_DIR/audit/report.json || true
+      script:
+        - npm run audit:process
+    - stage: Test
+      script: npm test
 
-before_script:
-  - npm audit --json >> $TRAVIS_BUILD_DIR/audit/report.json || true
-
-script:
-  - npm run audit:process
-    
 notifications:
   email: false
