@@ -20,7 +20,7 @@
 	"devDependencies": {
 		"@palashmon/bundlesize": "~0.18.4",
 		"chai": "^4.1.2",
-		"mocha": "^7.0.1"
+		"mocha": "^7.1.2"
 	},
 	"bundlesize": [
 		{
